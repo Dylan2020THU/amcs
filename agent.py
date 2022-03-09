@@ -1,12 +1,12 @@
 import numpy as np
 
-class Sarsa_Agent(object):
-    def __init__(self, obs_n, act_n, learning_rate=0.01, gamma=0.9, epsilon=0.1):
+class Sarsa_Agent:
+    def __init__(self, state_n, act_n, learning_rate=0.01, gamma=0.9, epsilon=0.1):
         self.act_n = act_n
         self.lr = learning_rate
         self.gamma = gamma
         self.epsilon = epsilon
-        self.Q = np.zeros((obs_n, act_n))  # Q table
+        self.Q = np.zeros((state_n, act_n))  # Q table
 
     def sample(self, state):
         if np.random.uniform(0, 1) < (1 - self.epsilon):
