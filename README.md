@@ -25,4 +25,4 @@
   
 7. Reward:
     
-    1 if the aircraft at any of three check mode is get checked, otherwise 0.
+    1 if the aircraft at any of three check mode is checked, 0 otherwise.
